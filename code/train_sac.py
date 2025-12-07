@@ -10,17 +10,17 @@ def main():
         "MlpPolicy",
         env,
         verbose=1,
-        tensorboard_log="../logs/sac/"
+        tensorboard_log="logs/sac/"
     )
 
     checkpoint_callback = CheckpointCallback(
         save_freq=50_000,
-        save_path="../models/checkpoints/sac/",
+        save_path="models/checkpoints/sac/",
         name_prefix="sac_checkpoint"
     )
 
     model.learn(total_timesteps=300_000, callback=checkpoint_callback)
-    model.save("../models/sac_final.zip")
+    model.save("models/sac_final.zip")
 
 if __name__ == "__main__":
     main()
