@@ -158,3 +158,14 @@ TD3 performs moderately well.
 PPO performs the worst and is unstable on this task.
 
 
+## Agent Demonstrations
+
+### SAC Performance
+![sac_visual](https://github.com/user-attachments/assets/81a41990-1f18-47fa-bcf8-7f4a9cfd247b)
+
+
+### PPO Performance
+![ppo_visual](https://github.com/user-attachments/assets/7d429bef-a9fa-424a-962e-577a26fe9e03)
+
+### TD3 Performance
+![td3_visual](https://github.com/user-attachments/assets/6da95f6e-c00a-42c3-957a-19e301202c3d)
