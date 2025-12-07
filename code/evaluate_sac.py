@@ -1,7 +1,7 @@
 import gymnasium as gym
 from stable_baselines3 import SAC
 
-def evaluate(model_path="../models/sac_final.zip", episodes=20):
+def evaluate(model_path="models/sac_final.zip", episodes=20):
     env = gym.make("Reacher-v5", render_mode="human")
     model = SAC.load(model_path)
 

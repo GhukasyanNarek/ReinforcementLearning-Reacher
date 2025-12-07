@@ -27,9 +27,9 @@ def main():
     env = gym.make("Reacher-v5")  # no render for batch evaluation
 
     models = {
-        "PPO": PPO.load("../models/ppo_final"),
-        "TD3": TD3.load("../models/td3_final"),
-        "SAC": SAC.load("../models/sac_final"),
+        "PPO": PPO.load("models/ppo_final"),
+        "TD3": TD3.load("models/td3_final"),
+        "SAC": SAC.load("models/sac_final"),
     }
 
     results = []
@@ -50,7 +50,7 @@ def main():
             })
 
     df = pd.DataFrame(results)
-    df.to_csv("../plots/eval_results.csv", index=False)
+    df.to_csv("plots/eval_results.csv", index=False)
 
     print("\nSaved evaluation results to plots/eval_results.csv")
 

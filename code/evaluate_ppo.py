@@ -1,7 +1,7 @@
 import gymnasium as gym
 from stable_baselines3 import PPO
 
-def evaluate(model_path="../models/ppo_final.zip", episodes=20):
+def evaluate(model_path="models/ppo_final", episodes=20):
     env = gym.make("Reacher-v5", render_mode="human")
     model = PPO.load(model_path)
 

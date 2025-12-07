@@ -1,7 +1,7 @@
 import gymnasium as gym
 from stable_baselines3 import TD3
 
-def evaluate(model_path="../models/td3_final.zip", episodes=20):
+def evaluate(model_path="models/td3_final", episodes=20):
     env = gym.make("Reacher-v5", render_mode="human")
     model = TD3.load(model_path)
     for ep in range(episodes):
