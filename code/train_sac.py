@@ -20,7 +20,7 @@ def main():
     )
 
     model.learn(total_timesteps=300_000, callback=checkpoint_callback)
-    model.save("../models/sac_final")
+    model.save("../models/sac_final.zip")
 
 if __name__ == "__main__":
     main()
